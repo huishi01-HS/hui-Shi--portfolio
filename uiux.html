@@ -1,0 +1,84 @@
+<link rel="stylesheet" type="text/css" href="format.css"
+<!-- uiux.html -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="uiux-page">
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="uiux.html" class="active">UI/UX</a></li>
+        <li><a href="graphic.html">Graphic Design</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="content slide-in">
+    <h2>UI/UX Projects</h2>
+    <section class="projects">
+    
+      <div class="project">
+  <a href="mountainmania.html">
+    <img src="images/gamehomepage.png" alt="Mountain Mania Homepage" style="margin-top: 12px;">
+   <div class="project">
+    <h3>Arcade Game - Mountain Mania</h3>
+    <p>UI/UX Design ➕ Physical Prototyping</p>
+    </div>
+  </a>
+      </div>
+      
+    </section>
+    <div id="footer">© 2025 Hui Shi Portfolio - Boston MA </div>
+  </main>
+</body>
+</html>
+
+<!-- style additions for .project -->
+<style>
+.projects {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.project h3 {
+  margin: 0;
+  color: #e7b997;
+  font-size: 20px;
+}
+
+.project p {
+  color: #43484d;
+  font-size: 14px;
+  margin-top: 6px;
+}
+</style>

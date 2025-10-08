@@ -1,0 +1,47 @@
+<link rel="stylesheet" type="text/css" href="format.css"
+<!-- about.html -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Hui Shi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="uiux.html">UI/UX</a></li>
+        <li><a href="graphic.html">Graphic Design</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="content fade-in">
+    <h2>About Me</h2>
+    <p>I’m a self-designed Liberal Studies major at Lesley University with a concentration in UI/UX and visual communication. Fluent in Chinese and English, and proficient in Figma, Adobe Creative Suite, HTML/CSS.</p>
+    <a href="Hui_Shi_Resume.pdf" download class="btn">Download Resume</a>
+ <div id="footer">© 2025 Hui Shi Portfolio - Boston MA </div>
+  </main>
+  <script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("slide-in");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+</body>
+</html>
